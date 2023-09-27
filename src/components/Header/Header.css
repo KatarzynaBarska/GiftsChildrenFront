@@ -1,0 +1,36 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: khaki;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container h1 {
+    color: darkseagreen;
+    font-family: "Arial", serif;
+    padding: 10px 10px 5px 10px;
+    margin: 0;
+
+}
+.container a {
+    text-decoration: none;
+}
+.container_header {
+    margin: auto;
+    padding: 10px;
+    color: darkseagreen;
+    font-weight: bold;
+}
