@@ -7,9 +7,6 @@ export const MainView = () => {
                 <h1>My Gifts App - strona główna</h1>
                 Menu: <NavLink to="/child">Zapraszamy!</NavLink >
             </div>
-
-
-
         </>
     );
 }
