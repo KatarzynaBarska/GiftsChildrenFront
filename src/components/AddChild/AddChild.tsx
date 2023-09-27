@@ -34,7 +34,7 @@ export const AddChild = () => {
             });
             const data: ChildEntity = await res.json();
 
-            setResultInfo(`${data.name} has been created on list.`);
+            setResultInfo(`${data.name} has been created on list.Refresh the pages, please.`);
 
         } finally {
 

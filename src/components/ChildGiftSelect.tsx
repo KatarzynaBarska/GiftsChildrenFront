@@ -9,20 +9,24 @@ interface Props {
 export const ChildGiftSelect = (props: Props) => {
     const [selected,setSelected] = useState<string>(props.selectedId || '');
 
+
     const sendForm = async (e: FormEvent) => {
         e.preventDefault();
 
-      await fetch(`http://localhost:3001/child/gift/${props.childId}`, {
-          method: 'PATCH',
-          headers: {
-              'Content-Type': 'application/json',
-          },
 
-          body: JSON.stringify({
-        giftId: selected,
 
-          }as SetGiftForChildReq),
-      });
+    await fetch(`http://localhost:3001/child/gift/${props.childId}`, {
+        method: 'PATCH',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+
+        body: JSON.stringify({
+            giftId: selected,
+
+        } as SetGiftForChildReq),
+    });
+
     };
 
   return (
@@ -38,6 +42,5 @@ export const ChildGiftSelect = (props: Props) => {
           </select>
 <button type="submit">Save</button>
       </form>
-
   );
 };

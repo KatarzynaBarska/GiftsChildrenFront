@@ -2,9 +2,11 @@ import React from 'react';
 import {Route, Routes} from 'react-router-dom';
 import {GiftsView} from "./views/GiftsView";
 import {ChildView} from "./views/ChildView";
-import {Header} from "./components/Header/Header";
+//import {Header} from "./components/Header/Header";
 import {NotFoundView} from "./views/NotFoundView";
 import {SingleGiftView} from "./views/SingleGiftView";
+import { MainView } from './views/MainView';
+
 
 //1.Standardowy routing
 // export const App = () => {
@@ -19,13 +21,14 @@ import {SingleGiftView} from "./views/SingleGiftView";
 export const App = () => {
     return (
         <>
-            <Header/>
+
+            {/*<Header/>*/}
             <Routes>
-                {/*/!*<Route path="*" element={<MainView/>} />*!/ @TODO dorobić widok MainView*/}
+                <Route path="/" element={<MainView/>} />
                 <Route path="/gift" element={<GiftsView/>}/>
                 <Route path="/gift/:idOfGift" element={<SingleGiftView/>}/>
                 <Route path="/child" element={<ChildView/>}/>
-                <Route path="notfound" element={<NotFoundView/>}/>
+                <Route path="*" element={<NotFoundView/>}/>
             </Routes>
         </>
 
