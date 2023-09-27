@@ -1,0 +1,1 @@
+This repository contains a project created as part of a programming course, which includes the implementation of forms, options for selection, as well as adding and deleting data functions. The project is written based on Express.js and React.js frameworks and integrates with a MySQL database. Additionally, I plan to improve this project by adding more features.
