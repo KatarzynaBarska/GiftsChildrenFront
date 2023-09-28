@@ -31,3 +31,8 @@ html, body {
 .mainView a:hover {
     color: darkgoldenrod;
 }
+
+.img_home {
+    width: 50%; /* 50% aktualnej szerokości */
+    height: auto;
+}

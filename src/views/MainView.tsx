@@ -3,7 +3,7 @@ import {HomePage} from "../components/HomePage/HomePage";
 export const MainView = () => {
     return (
         <>
-           <HomePage/>
+            <HomePage/>
         </>
     );
 }
