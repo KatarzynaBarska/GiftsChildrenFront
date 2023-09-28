@@ -23,10 +23,13 @@ export const ChildrenList = () => {
 
 
     return <>
-        <h1>Children</h1>
-        <ChildrenTable
-            childrenList={data.childrenList}
-            giftsList={data.giftsList}
-        />
+        <div className="container_table">
+            <h1>Children</h1>
+            <ChildrenTable
+                childrenList={data.childrenList}
+                giftsList={data.giftsList}
+            />
+        </div>
+
     </>;
 };
