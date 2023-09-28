@@ -1,5 +1,6 @@
 import React from 'react';
 import {NavLink} from "react-router-dom";
+import prezentHeader from '../../Assets/prezentHeader.png';
 
 import './Header.css';
 
@@ -10,6 +11,7 @@ export const Header = () => {
     return (
         <>
             <div className="container">
+                <img src={prezentHeader} alt="prezent"/>
                 <div className="container_header">
                     <h1>My Gifts App</h1>
                     Menu: <NavLink style={colorOfLink}
