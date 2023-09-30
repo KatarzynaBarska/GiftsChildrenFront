@@ -25,7 +25,10 @@ export const GiftsList = () => {
 
 
     return <>
-        <h1>Gifts</h1>
-        <GiftsTable gifts={giftsList} onGiftsChange={refreshGifts}/>
+        <div className="container_gifts_table">
+            <h1>Gifts</h1>
+            <GiftsTable gifts={giftsList} onGiftsChange={refreshGifts}/>
+        </div>
+
     </>;
 };
